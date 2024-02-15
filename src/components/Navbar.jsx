@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 
 
-export default function Navbar(props) {    
+export default function Navbar(props) {
     return (
         <>
             <nav className={`navbar bg-${props.mode.bgColor} navbar-expand-lg border-bottom`} data-bs-theme={props.mode.color}>
