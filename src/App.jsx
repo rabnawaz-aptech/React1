@@ -41,28 +41,28 @@ function App() {
       path: "/",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
-      <Home title="Full Stack Developer - Rabnawaz" mode={mode} toggleMode={toggleMode} />
+      <Home title="Full Stack Developer" mode={mode} toggleMode={toggleMode} />
       </>),
     },
     {
       path: "/Projects",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
-      <Projects title="Projects - Rabnawaz" mode={mode} toggleMode={toggleMode} />
+      <Projects title="Projects" mode={mode} toggleMode={toggleMode} />
       </>),
     },
     {
       path: "About",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
-      <About title="About - Rabnawaz" mode={mode} toggleMode={toggleMode} />
+      <About title="About" mode={mode} toggleMode={toggleMode} />
       </>),
     },
     {
       path: "Contact",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
-      <Contact title="Contact - Rabnawaz" mode={mode} toggleMode={toggleMode} />
+      <Contact title="Contact" mode={mode} toggleMode={toggleMode} />
       </>),
     },
   ])
