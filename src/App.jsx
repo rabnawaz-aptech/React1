@@ -9,6 +9,7 @@ import About from "./components/About"
 import Contact from "./components/Contact"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/Login'
+import PageNotFound from './components/PageNotFound'
 
 function App() {
 
@@ -70,6 +71,12 @@ function App() {
       path: "Login",
       element: (<>
       <Login/>
+      </>),
+    },
+    {
+      path: "*",
+      element: (<>
+      <PageNotFound/>
       </>),
     },
   ])
