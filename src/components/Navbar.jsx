@@ -25,6 +25,9 @@ export default function Navbar(props) {
                             <li className="nav-item">
                                 <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/Contact">Contact</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/Login">Login</NavLink>
+                            </li>
                         </ul>
                         <form className="d-flex" role="search">
                             <div className="form-check form-switch">
