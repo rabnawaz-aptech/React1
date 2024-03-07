@@ -54,21 +54,21 @@ function App() {
       </>),
     },
     {
-      path: "About",
+      path: "/About",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
       <About title="About" mode={mode} toggleMode={toggleMode} btnContent="About" />
       </>),
     },
     {
-      path: "Contact",
+      path: "/Contact",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
       <Contact title="Contact" mode={mode} toggleMode={toggleMode} btnContent="Contact" />
       </>),
     },
     {
-      path: "Login",
+      path: "/Login",
       element: (<>
       <Login/>
       </>),
