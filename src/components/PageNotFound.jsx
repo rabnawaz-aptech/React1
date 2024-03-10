@@ -6,7 +6,7 @@ export default function PageNotFound(props) {
     <>
     <div className="home">
     <div className="overflow-y-hidden">
-    <div className={`w-100 min-vh-100 `}>
+    <div className={`w-100 min-vh-100 bg-${props.mode.elementColor}`}>
       <div className={`container py-5`}>
         <div className="row py-5">
           <div className="col-md-6 offset-md-3 text-center center-div py-5">
