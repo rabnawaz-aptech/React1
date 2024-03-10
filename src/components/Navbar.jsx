@@ -3,9 +3,11 @@ import { NavLink } from 'react-router-dom'
 
 
 export default function Navbar(props) {
+    const bgColor = props.mode.bgColor;
+    const nav = props.mode.nav;
     return (
         <>
-            <nav className={`navbar bg-${props.mode.bgColor} navbar-expand-lg border-bottom`} data-bs-theme={props.mode.color}>
+            <nav className={`navbar bg-nav-${nav} navbar-expand-lg border-bottom sticky-top`} data-bs-theme={props.mode.color}>
                 <div className="container-fluid">
                     <NavLink className="navbar-brand Logo" to="/">Rabnawaz</NavLink>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,16 +19,22 @@ export default function Navbar(props) {
                                 <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/projects">Projects</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/projects/">Projects</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/about">About</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/services/">Services</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/contact">Contact</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/about/">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/login">Blog</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/contact/">Contact</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/blog/">Blog</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/login/">Login</NavLink>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">

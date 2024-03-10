@@ -3,7 +3,7 @@ import React from 'react'
 export default function Button(props) {
   return (
     <>
-        <button className='btn btn-primary'>{props.btnContent}</button>
+        <button className='btn btn-primary fw-medium'>{props.btnContent}</button>
     </>
   )
 }

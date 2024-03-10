@@ -1,5 +1,57 @@
-.home{
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../src/assets/bg.jpg);
+/* body{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
     background-size: cover;
     background-repeat: no-repeat;
+} */
+body{
+    background-color: #F3F4F6;
+}
+
+
+
+.bg-nav-light{
+    background-color: #ffffff;
+}
+.bg-nav-dark{
+    background-color: #1f2937;
+}
+
+
+.bg-hash-light{
+    background-color: #F3F4F6;
+}
+.bg-hash-dark{
+    background-color: #111827;
+}
+
+
+
+
+.card-hash-light{
+    background-color: #ffffff;
+    color: #1f2937;
+}
+/* 
+.card-hash-light h2,p{
+} */
+
+
+
+
+.card-hash-dark{
+    background-color: #334155;
+    color: #ffffff;
+}
+
+.card-hash-dark-p{
+    color: #9ca3af;
+}
+
+.contact-card{
+    background-color: #1E293B;
 }
