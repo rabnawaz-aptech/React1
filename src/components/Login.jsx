@@ -13,7 +13,7 @@ export default function Login() {
                                 <div className="col-1 col-md-2"></div>
                                 <div className="col-10 col-md-8">
                                     <div className="login-box border border-white">
-                                        <h2 class="h2-1">Login:</h2>
+                                        <h2 className="h2-1">Login:</h2>
                                         <br />
                                         <form>
                                             <label>Email:</label>

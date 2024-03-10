@@ -43,7 +43,7 @@ function App() {
       path: "/",
       element: (<>
       <Navbar mode={mode} toggleMode={toggleMode} />
-      <Home title="Full Stack Developer" mode={mode} toggleMode={toggleMode} btnContent="Home" />
+      <Home title="Backend MERN Stack Developer" subtitle="Building Seamless Experiences with React and Crafting Dynamic Solutions with Express." mode={mode} toggleMode={toggleMode} btnContent="Home" />
       </>),
     },
     {
@@ -67,16 +67,17 @@ function App() {
       <Contact title="Contact" mode={mode} toggleMode={toggleMode} btnContent="Contact" />
       </>),
     },
-    {
-      path: "/Login",
-      element: (<>
-      <Login/>
-      </>),
-    },
+    // {
+    //   path: "/Login",
+    //   element: (<>
+    //   <Login/>
+    //   </>),
+    // },
     {
       path: "*",
       element: (<>
-      <PageNotFound/>
+      <Navbar mode={mode} toggleMode={toggleMode} />
+      <PageNotFound mode={mode} toggleMode={toggleMode} />
       </>),
     },
   ])

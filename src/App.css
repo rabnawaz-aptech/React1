@@ -5,9 +5,6 @@ body{
     font-weight: bold;
 }
 
-.banner-1{
-    height: 500px;
-}
 
 .Login{
     background-color: #000 !important;
@@ -59,3 +56,4 @@ hr{
     background-color: #0d61bb;
     color: #fff;
 }
+

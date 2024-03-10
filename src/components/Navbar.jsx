@@ -17,16 +17,16 @@ export default function Navbar(props) {
                                 <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/">Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/Projects">Projects</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} aria-current="page" to="/projects">Projects</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/About">About</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/Contact">Contact</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/contact">Contact</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/Login">Login</NavLink>
+                                <NavLink className={(e) => { return e.isActive ? "active nav-link" : "nav-link" }} to="/login">Blog</NavLink>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
