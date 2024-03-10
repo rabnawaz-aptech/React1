@@ -1,3 +1,4 @@
+import React, {Suspense} from 'react'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -12,7 +13,8 @@ import Login from './components/Login'
 import PageNotFound from './components/PageNotFound'
 import Footer from './components/Footer'
 import Services from './pages/Services'
-import Blogs from './pages/Blogs'
+// import Blogs from './pages/Blogs'
+const Blogs = React.lazy(() => import('./pages/Blogs'));
 
 function App() {
 
@@ -95,7 +97,9 @@ function App() {
       path: "/blog/",
       element: (<>
         <Navbar mode={mode} toggleMode={toggleMode} />
+        <Suspense fallback={<div>Loading...</div>}>
         <Blogs title="Learn to code online" mode={mode} toggleMode={toggleMode} btnContent="Contact" />
+        </Suspense>
         <Footer mode={mode} toggleMode={toggleMode} />
       </>),
     },
